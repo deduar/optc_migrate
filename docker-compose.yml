@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+  db:
+    image: mariadb
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: oportunicar
+      MYSQL_USER: optc
+      MYSQL_PASSWORD: optc
+    volumes:
+      - ./db:/var/lib/mysql
+    container_name: mariadb_optc
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    container_name: mariadb_admin_optc
