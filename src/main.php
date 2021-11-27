@@ -72,12 +72,9 @@ try {
       $province = $conn->query($sql_province);
 
       echo $row["post_author"]."|".$row["ID"]."|".$category->fetch_assoc()['meta_value']."|".$brand->fetch_assoc()['meta_value']."|".$model->fetch_assoc()['meta_value']."|".$contado->fetch_assoc()['meta_value']."|".$financiado->fetch_assoc()['meta_value']."|".$numberdues->fetch_assoc()['meta_value']."|".$valuedues->fetch_assoc()['meta_value']."|"."|".$taxes_inc->fetch_assoc()['meta_value']."|".$year->fetch_assoc()['meta_value']."|".$row["post_title"]."|".$version->fetch_assoc()['meta_value']."|".$seat->fetch_assoc()['meta_value']."|".$door->fetch_assoc()['meta_value']."|".$power->fetch_assoc()['meta_value']."|"."|".$kms->fetch_assoc()['meta_value']."|"."|".$cambio->fetch_assoc()['meta_value']."|".$row["post_content"]."|".$waranty->fetch_assoc()['meta_value']."|".$certificate_description->fetch_assoc()['meta_value']."|".$warrantyDuration->fetch_assoc()['meta_value']."|".$exchange->fetch_assoc()['meta_value']."|".$certificate->fetch_assoc()['meta_value']."|".$color->fetch_assoc()['meta_value']."|".$acabado->fetch_assoc()['meta_value']."|".$province->fetch_assoc()['meta_value']."|"."|"."|"."|"."|"."|".PHP_EOL;
-
     }
   }
   $conn->close();
-
 } catch (Exception $e) {
   echo $e->getMessage();
 }
-
